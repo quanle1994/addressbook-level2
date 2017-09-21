@@ -218,25 +218,6 @@ public class Parser {
 
         String tags = matcher.group("tagArguments");
         return new DeleteCommand(Integer.parseInt(matcher.group("index")));
-//        try {
-//            return new EditCommand(matcher.group("index"),
-//
-//                    matcher.group("name"),
-//
-//                    matcher.group("phone"),
-//                    isPrivatePrefixPresent(matcher.group("isPhonePrivate")),
-//
-//                    matcher.group("email"),
-//                    isPrivatePrefixPresent(matcher.group("isEmailPrivate")),
-//
-//                    matcher.group("address"),
-//                    isPrivatePrefixPresent(matcher.group("isAddressPrivate")),
-//
-//                    getTagsFromArgs(matcher.group("tagArguments"))
-//            );
-//        } catch (IllegalValueException ive) {
-//            return new IncorrectCommand(ive.getMessage());
-//        }
     }
 
     /**
